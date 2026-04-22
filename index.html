@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>你的名字 | 个人主页</title>
+  <title>你的名字 | 内容小站</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +15,9 @@
       </a>
       <nav class="site-nav" aria-label="主导航">
         <a href="#about">关于我</a>
-        <a href="#projects">项目</a>
+        <a href="writing.html">写作</a>
+        <a href="photos.html">照片</a>
+        <a href="design.html">设计</a>
         <a href="#contact">联系我</a>
       </nav>
     </header>
@@ -23,12 +25,13 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Simple Personal Site</p>
-          <h1>把想法整理成清爽、可读、好看的页面。</h1>
-          <p class="lead">这是一个很简单的个人主页，用来介绍我自己、展示一些小项目，并保留联系入口。</p>
+          <p class="eyebrow">Content Studio</p>
+          <h1>我把写作、照片和设计放在同一个小站里。</h1>
+          <p class="lead">主页负责介绍方向，三个独立页面分别放文章、摄影和设计作品。这里会慢慢长成一个属于我的内容空间。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">查看项目</a>
-            <a class="button button-ghost" href="#contact">联系我</a>
+            <a class="button button-primary" href="writing.html">进入写作</a>
+            <a class="button button-ghost" href="photos.html">查看照片</a>
+            <a class="button button-ghost" href="design.html">看设计作品</a>
           </div>
         </div>
 
@@ -37,64 +40,91 @@
             <div class="avatar">YN</div>
             <div>
               <p class="micro">PROFILE</p>
-              <h2>天才</h2>
-              <p>学生 / 设计爱好者 / 前端入门者</p>
+              <h2>你的名字</h2>
+              <p>记录内容 · 拍照练习 · 视觉设计</p>
             </div>
             <ul class="quick-facts">
-              <li><span>常驻</span><strong>中国 · 线上</strong></li>
-              <li><span>方向</span><strong>内容、设计、前端</strong></li>
-              <li><span>状态</span><strong>持续学习中</strong></li>
+              <li><span>更新</span><strong>不定期</strong></li>
+              <li><span>主题</span><strong>写作 / 摄影 / 设计</strong></li>
+              <li><span>状态</span><strong>持续整理中</strong></li>
             </ul>
           </div>
 
           <div class="note-card">
-            <p class="micro">NOW</p>
-            <p>我正在练习把作品和日常想法整理成更有秩序的内容，同时慢慢提升页面审美和交互细节。</p>
+            <p class="micro">NOTE</p>
+            <p>这里不是单纯的首页，而是三个入口的总目录。以后每篇文章、每组照片和每个作品都可以在这里找到对应的位置。</p>
           </div>
-        </div>
+        </aside>
       </section>
 
       <section class="section reveal delay-2" id="about">
-        <div class="section-head">
+        <div class="section-head section-head-split">
           <p class="eyebrow">关于我</p>
-          <h2>做事风格</h2>
+          <h2>我想把内容做得更完整一点</h2>
         </div>
         <div class="info-grid">
           <article class="card card-soft">
-            <h3>喜欢什么</h3>
-            <p>喜欢清爽的界面、结构清晰的内容，还有能够真正解决问题的小工具。</p>
+            <h3>写作</h3>
+            <p>放一些随笔、读后感、生活记录和想法整理，让文字有一个安静的地方。</p>
           </article>
           <article class="card card-soft">
-            <h3>正在做什么</h3>
-            <p>学习 HTML、CSS、JavaScript，也在慢慢练习写作和整理个人作品。</p>
+            <h3>摄影</h3>
+            <p>记录日常里看见的光线、街道和瞬间，慢慢整理成自己的照片页。</p>
           </article>
           <article class="card card-soft">
-            <h3>想成为</h3>
-            <p>一个能把想法落地的人，把内容、设计和技术都做得更好一点。</p>
+            <h3>设计</h3>
+            <p>展示海报、UI 练习、排版和视觉实验，留下我做过的界面与构图练习。</p>
           </article>
         </div>
       </section>
 
       <section class="section reveal delay-3" id="projects">
         <div class="section-head section-head-split">
-          <p class="eyebrow">项目</p>
-          <h2>简单作品</h2>
+          <p class="eyebrow">入口</p>
+          <h2>三个内容界面</h2>
         </div>
-        <div class="project-list">
-          <article class="project card">
+        <div class="interface-grid">
+          <a class="interface-card card" href="writing.html">
             <span class="project-index">01</span>
-            <h3>个人笔记页</h3>
-            <p>记录读书、灵感和日常想法，保持内容简洁、易读、好维护。</p>
-          </article>
-          <article class="project card accent-card">
+            <h3>写作界面</h3>
+            <p>短文、笔记、读后感和更长一点的文章，都放在这里。</p>
+            <span class="card-link">进入写作</span>
+          </a>
+          <a class="interface-card card accent-card" href="photos.html">
             <span class="project-index">02</span>
-            <h3>小型工具页面</h3>
-            <p>做一些计算器、待办清单、时间追踪之类的小功能页面练手。</p>
-          </article>
-          <article class="project card">
+            <h3>照片界面</h3>
+            <p>用网格或相册的方式展示我拍过的照片、旅行记录和日常瞬间。</p>
+            <span class="card-link">进入照片</span>
+          </a>
+          <a class="interface-card card" href="design.html">
             <span class="project-index">03</span>
-            <h3>作品展示页</h3>
-            <p>把练习过的内容整理成一页式作品集，方便持续更新和分享。</p>
+            <h3>设计界面</h3>
+            <p>海报、版式、网页练习、图形实验，都会在这一区域持续更新。</p>
+            <span class="card-link">进入设计</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section reveal delay-4">
+        <div class="section-head">
+          <p class="eyebrow">最近会放什么</p>
+          <h2>三个内容方向的样子</h2>
+        </div>
+        <div class="story-list">
+          <article class="story-card card">
+            <p class="story-meta">写作 · 2026</p>
+            <h3>一篇关于日常和观察的短文</h3>
+            <p>把某一天看到的细节、当天的思考和一点点情绪整理下来，形成一篇轻量文章。</p>
+          </article>
+          <article class="story-card card">
+            <p class="story-meta">照片 · 2026</p>
+            <h3>一组街头和天空的照片</h3>
+            <p>用相册的方式放日常拍摄的照片，保留光线、色彩和拍摄时的氛围感。</p>
+          </article>
+          <article class="story-card card">
+            <p class="story-meta">设计 · 2026</p>
+            <h3>一个海报或者页面练习</h3>
+            <p>把做过的设计稿、排版实验和视觉练习放出来，让作品集慢慢充实起来。</p>
           </article>
         </div>
       </section>
@@ -103,14 +133,14 @@
         <div>
           <p class="eyebrow">联系我</p>
           <h2>如果你想交流</h2>
-          <p>可以通过邮箱、社交账号或留言联系我，这里先放一个最基础的联系方式。</p>
+          <p>可以通过邮箱联系我，也可以以后把社交账号或作品链接补进来。</p>
         </div>
         <a class="button button-primary" href="mailto:hello@example.com">hello@example.com</a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 你的名字 · 简单个人网站</p>
+      <p>© 2026 你的名字 · 内容小站</p>
     </footer>
   </div>
   <script src="script.js"></script>

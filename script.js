@@ -1,7 +1,7 @@
 const yearElement = document.querySelector('.site-footer p');
 
 if (yearElement) {
-  yearElement.textContent = `© ${new Date().getFullYear()} 你的名字 · 简单个人网站`;
+  yearElement.textContent = `© ${new Date().getFullYear()} 你的名字 · 内容小站`;
 }
 
 const revealItems = document.querySelectorAll('.reveal');
