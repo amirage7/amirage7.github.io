@@ -1,17 +1,27 @@
-// JavaScript 代码可以放在这里，例如实现轮播图、滚动动画等
+const yearElement = document.querySelector('.site-footer p');
 
-// 示例：简单的轮播图功能
-const slider = document.querySelector('.background-image');
-const images = slider.querySelectorAll('img');
-let currentIndex = 0;
-
-function showNextImage() {
-  images[currentIndex].style.opacity = 0;
-  currentIndex = (currentIndex + 1) % images.length;
-  images[currentIndex].style.opacity = 1;
+if (yearElement) {
+  const currentYear = new Date().getFullYear();
+  yearElement.textContent = `© ${currentYear} 你的名字 · 简单个人网站`;
 }
 
-if (images.length > 0) {
-  images[0].style.opacity = 1; // 初始显示第一张图片
-  setInterval(showNextImage, 5000); // 每隔 5 秒切换图片
+const revealItems = document.querySelectorAll('.reveal');
+
+if ('IntersectionObserver' in window && revealItems.length > 0) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealItems.forEach((item) => {
+    item.style.animationPlayState = 'paused';
+    observer.observe(item);
+  });
 }

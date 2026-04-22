@@ -3,33 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>爱立方自立自强联合会</title>
+  <title>你的名字 | 个人主页</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">爱立方自立自强联合会</div>
-    <nav>
-      <a href="index.html" class="active">首页</a>
-      <a href="news.html">部门新闻</a>
-      <a href="about.html">部门介绍</a>
-      <a href="events.html">活动中心</a>
-      <a href="rules.html">规章制度</a>
+  <header class="site-header">
+    <a class="brand" href="#top">YN</a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#about">关于我</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系我</a>
     </nav>
   </header>
 
-  <main>
-    <div class="background-image">
-      <img src="assets/images/background-image.png" alt="爱立方自立自强联合会">
-    </div>
-    <div class="main-title">爱立方</div>
-    <div class="slogan">自立自强，筑梦未来</div>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">个人主页</p>
+        <h1>你好，我是你的名字。</h1>
+        <p class="lead">我喜欢把想法整理成清晰的页面、可用的工具和有温度的内容。这里是我的简单个人网站。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">联系我</a>
+          <a class="button button-ghost" href="#projects">看看项目</a>
+        </div>
+      </div>
+
+      <aside class="profile-card reveal delay-1" aria-label="个人信息卡片">
+        <div class="avatar">YN</div>
+        <div>
+          <h2>你的名字</h2>
+          <p>学生 / 设计爱好者 / 前端入门者</p>
+        </div>
+        <ul class="quick-facts">
+          <li><span>常驻</span><strong>中国 · 线上</strong></li>
+          <li><span>方向</span><strong>内容、设计、前端</strong></li>
+          <li><span>状态</span><strong>持续学习中</strong></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section reveal delay-2" id="about">
+      <div class="section-head">
+        <p class="eyebrow">关于我</p>
+        <h2>做事风格</h2>
+      </div>
+      <div class="info-grid">
+        <article class="card">
+          <h3>喜欢什么</h3>
+          <p>喜欢清爽的界面、结构清晰的内容，还有能够真正解决问题的小工具。</p>
+        </article>
+        <article class="card">
+          <h3>正在做什么</h3>
+          <p>学习 HTML、CSS、JavaScript，也在慢慢练习写作和整理个人作品。</p>
+        </article>
+        <article class="card">
+          <h3>想成为</h3>
+          <p>一个能把想法落地的人，把内容、设计和技术都做得更好一点。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal delay-3" id="projects">
+      <div class="section-head">
+        <p class="eyebrow">项目</p>
+        <h2>简单作品</h2>
+      </div>
+      <div class="project-list">
+        <article class="project card">
+          <span class="project-index">01</span>
+          <h3>个人笔记页</h3>
+          <p>记录读书、灵感和日常想法，保持内容简洁、易读、好维护。</p>
+        </article>
+        <article class="project card">
+          <span class="project-index">02</span>
+          <h3>小型工具页面</h3>
+          <p>做一些计算器、待办清单、时间追踪之类的小功能页面练手。</p>
+        </article>
+        <article class="project card">
+          <span class="project-index">03</span>
+          <h3>作品展示页</h3>
+          <p>把练习过的内容整理成一页式作品集，方便持续更新和分享。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-card reveal delay-4" id="contact">
+      <div>
+        <p class="eyebrow">联系我</p>
+        <h2>如果你想交流</h2>
+        <p>可以通过邮箱、社交账号或留言联系我，这里先放一个最基础的联系方式。</p>
+      </div>
+      <a class="button button-primary" href="mailto:hello@example.com">hello@example.com</a>
+    </section>
   </main>
 
-  <footer>
-    <div class="copyright">© 2023 爱立方自立自强联合会</div>
-    <div class="contact">联系方式：love.cube@example.com</div>
+  <footer class="site-footer">
+    <p>© 2026 你的名字 · 简单个人网站</p>
   </footer>
   <script src="script.js"></script>
 </body>
